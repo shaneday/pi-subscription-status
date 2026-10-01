@@ -2,9 +2,12 @@
 
 ## Current state
 
-- Repository created at `~/.pi/agent/extensions/pi-subscription-status`.
-- Intended implementation: one `ctx.ui.setStatus()` entry, never a custom footer.
-- Cache is local, ignored by Git, and has a 10-minute TTL.
+- Repository: `~/.pi/agent/extensions/pi-subscription-status`.
+- `index.js` is automatically discovered by Pi from this directory.
+- It uses one `ctx.ui.setStatus()` entry, never a custom footer.
+- `cache.json` is local, ignored by Git, and has a 10-minute TTL.
+- `node --test` passes (three parser/formatting checks).
+- Commits: `4988b4e` initialization; `4e51545` implementation.
 
 ## Design decisions
 
